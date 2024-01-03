@@ -51,6 +51,7 @@ body {
 
 p {
     color: var(--grayish-purple);
+    margin-bottom: 1.5rem;
     font-size: .9375rem;
     font-weight: 400;
 }
@@ -60,7 +61,7 @@ p {
     display: block;
     cursor: pointer;
     font-weight: 700;
-    margin-bottom: 3.125rem;
+    margin-bottom: 1.5rem;
     font-size: 1rem;
 }
 
@@ -84,7 +85,64 @@ a {
     transition: all 0.2s ease;
 }
 
-.content 
+.accordion__text p {
+    display: none;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked ~ .accordion__text p {
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+    content: "";
+    position: absolute;
+    right: 1.5rem;
+    width: 1.5625rem;
+    height: 2.25rem;
+    background-image: url('./assets/images/icon-minus.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.4s ease;
+}
+
+@media (max-width: 29.6875rem) {
+    .card {
+        max-width: 23.4375rem;
+        font-size: 1rem;
+        transition: all 0.2s ease;
+    }
+
+    .faq h1 {
+        font-size: 2.5rem;
+        transition: all 0.2s ease;
+    }
+
+    .faq img {
+        width: 1.75rem;
+        transition: all 0.2s ease;
+    }
+
+    .accordion__label::after {
+        width: 1.25rem;
+        transition: all 0.2s ease;
+    }
+
+    .accordion__input:checked ~ .accordion__label::after {
+        width: 1.25rem;
+        transition: all 0.2s ease;
+    }
+
+    p {
+        font-size: 0.75rem;
+        transition: all 0.2s ease;
+    }
+}
+
 
 
 
