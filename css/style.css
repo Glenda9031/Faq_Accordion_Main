@@ -85,7 +85,7 @@ a {
     transition: all 0.2s ease;
 }
 
-.accordion__text p {
+.accordion__text {
     display: none;
 }
 
