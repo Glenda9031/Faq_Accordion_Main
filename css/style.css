@@ -18,139 +18,45 @@
 body {
     font-family: 'Work Sans', sans-serif;
     background-color: var(--light-pink);
-    position: relative;
-}
-
-.faq {
     display: flex;
-    align-items: baseline;
-}
-
-.faq h1 {
-    font-size: 3.125rem;
-    color: var(--dark-purple);
-    margin: 1.25rem .9375rem 1.875rem;
-}
-
-.faq img {
-    width: 2.0625rem;
-    margin-right: 0.4375rem;
-    margin-left: 0.125rem;
-}
-
-.card {
-    padding: 1.125rem 2.1875rem 0 2.5rem;
-    background-color: var(--white);
-    display: grid;
-    margin: -7.5rem auto;
-    width: 28.1875rem;
-    position: relative;
+    justify-content: center;
     align-items: center;
-    border-radius: .9375rem;
-}
-
-p {
-    color: var(--grayish-purple);
-    margin-bottom: 1.5rem;
-    font-size: .9375rem;
-    font-weight: 400;
-}
-
-.accordion__label {
-    color: var(--dark-purple);
-    display: block;
-    cursor: pointer;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-.accordion__label::after {
-    content: "";
-    position: absolute;
-    right: 1.5rem;
-    width: 1.5625rem;
-    height: 2.25rem;
-    background-image: url('../assets/images/icon-plus.svg');
+    background: url('../assets/images/background-pattern-mobile.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    transition: all 0.4s ease-in-out;
+    min-height: 100vh;
+    padding: 0 1.5rem;
 }
 
-.content {
-    transition: all 0.2s ease;
-}
-
-.accordion__text {
+h1 {
     display: none;
 }
 
-.accordion__input {
-    display: none;
+main {
+    background: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 37.5rem;
+    box-shadow: 0 2rem 3.5rem 0 rgba(80, 0, 118, 0.10);
 }
 
-.accordion__input:checked ~ .accordion__text p {
-    display: block;
-    transition: all 0.4s ease-in-out;
+.accordion-title {
+    font-size: 2rem;
+    padding-left: 3rem;
+    position: relative;
+    margin-top: 0;
 }
 
-.accordion__input:checked ~ .accordion__label::after {
+.accordion-title::after {
     content: "";
-    position: absolute;
-    right: 1.5rem;
-    width: 1.5625rem;
-    height: 2.25rem;
-    background-image: url('./assets/images/icon-minus.svg');
-    background-repeat: no-repeat;
+    background: url('../assets/images/icon-star.svg') no-repeat center center;
     background-size: contain;
-    transition: transform 0.4s ease;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: calc(50% - .75rem);
+    left: 0;
 }
-
-@media (max-width: 29.6875rem) {
-    .card {
-        max-width: 23.4375rem;
-        font-size: 1rem;
-        transition: all 0.2s ease;
-    }
-
-    .faq h1 {
-        font-size: 2.5rem;
-        transition: all 0.2s ease;
-    }
-
-    .faq img {
-        width: 1.75rem;
-        transition: all 0.2s ease;
-    }
-
-    .accordion__label::after {
-        width: 1.25rem;
-        transition: all 0.2s ease;
-    }
-
-    .accordion__input:checked ~ .accordion__label::after {
-        width: 1.25rem;
-        transition: all 0.2s ease;
-    }
-
-    p {
-        font-size: 0.75rem;
-        transition: all 0.2s ease;
-    }
-}
-
-
-
-
-
-
-
-
-
 
 
 
