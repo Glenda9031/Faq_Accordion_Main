@@ -17,49 +17,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    background-color: var(--light-pink);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('../assets/images/background-pattern-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 100vh;
-    padding: 0 1.5rem;
 }
-
-h1 {
-    display: none;
-}
-
-main {
-    background: var(--white);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    width: 37.5rem;
-    box-shadow: 0 2rem 3.5rem 0 rgba(80, 0, 118, 0.10);
-}
-
-.accordion-title {
-    font-size: 2rem;
-    padding-left: 3rem;
-    position: relative;
-    margin-top: 0;
-}
-
-.accordion-title::after {
-    content: "";
-    background: url('../assets/images/icon-star.svg') no-repeat center center;
-    background-size: contain;
-    width: 1.5rem;
-    height: 1.5rem;
-    position: absolute;
-    top: calc(50% - .75rem);
-    left: 0;
-}
-
-
-
 
 
 
